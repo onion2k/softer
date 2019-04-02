@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600");
 
 body {
-  position: relative;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
   padding: 0;
   margin: 0;
-  background-image: url(https://source.unsplash.com/62vi3TG5EDg/1600x1600);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 img {
@@ -29,6 +28,33 @@ a {
   width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 5vw 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "side menu";
+  align-items: center;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  padding-left: 6vw;
+  padding-right: 15vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /**
