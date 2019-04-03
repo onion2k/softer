@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Playfair+Display");
 
 body {
   scroll-snap-type: mandatory;
@@ -47,7 +47,7 @@ a {
 section {
   scroll-snap-align: start;
   height: 100vh;
-  padding-left: 6vw;
+  padding-left: 10vw;
   padding-right: 15vw;
   background-repeat: no-repeat;
   background-position: center center;
@@ -55,6 +55,15 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-bottom: 1vh solid white;
+  display: flex;
+  align-items: center;
+}
+
+section span {
+  min-height: 30vh;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-size: 8rem;
 }
 
 /**

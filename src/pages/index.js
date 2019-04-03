@@ -11,35 +11,35 @@ class RootIndex extends React.Component {
     const [author] = get(this, "props.data.allContentfulPerson.edges");
 
     return (
-      <div>
+      <div className="content">
         <Helmet title={siteTitle} />
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/62vi3TG5EDg/1600x1600)`
           }}
         >
-          Page 1
+          <span>Page 1</span>
         </section>
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/FTSNEKBZ-IA/1600x1600)`
           }}
         >
-          Page 2
+          <span style={{ color: "white" }}>Page 2</span>
         </section>
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/yXZ8PKZFrIE/1600x1600)`
           }}
         >
-          Page 3
+          <span style={{ color: "white" }}>Page 3</span>
         </section>
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/nI0gM8_crrQ/1600x1600)`
           }}
         >
-          Page 4
+          <span style={{ color: "white" }}>Page 4</span>
         </section>
         {/* <Hero data={author.node} /> */}
         {/* <div className="wrapper">
