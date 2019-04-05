@@ -18,7 +18,7 @@ class RootIndex extends React.Component {
             backgroundImage: `url(https://source.unsplash.com/62vi3TG5EDg/1600x1600)`
           }}
         >
-          <span>Page 1</span>
+          <span>Ooer.com</span>
         </section>
         <section
           style={{
