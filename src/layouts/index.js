@@ -20,6 +20,7 @@ class Template extends React.Component {
         {children()}
         <div className="fixed">
           <Navigation />
+          <div className="empty"></div>
           <Footer />
         </div>
       </Container>

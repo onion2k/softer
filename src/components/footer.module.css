@@ -1,5 +1,7 @@
 footer {
-  grid-area: side;
+  position: fixed;
+  top: 0;
+  left: -1px;
   height: 100vh;
   display: grid;
   grid-template-rows: 5vw;

@@ -68,15 +68,15 @@ section {
   align-items: center;
 }
 
-section span {
+section h3 {
   min-height: 30vh;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 8rem;
 }
 
-section:first-of-type span {
+section:first-of-type h3 {
   font-family: "julietta-messie-ooer";
-  font-size: 24rem;
+  font-size: 8rem;
   color: #cd0000;
   transform: rotate(-10deg);
 }

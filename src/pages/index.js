@@ -13,19 +13,24 @@ class RootIndex extends React.Component {
     return (
       <div className="content">
         <Helmet title={siteTitle} />
+        {posts.map(({ node }) => {
+          return (
+            <ArticlePreview key={node.slug} article={node} />
+          )
+        })}
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/62vi3TG5EDg/1600x1600)`
           }}
         >
-          <span>Ooer.com</span>
+          <span>Ooer</span>
         </section>
         <section
           style={{
             backgroundImage: `url(https://source.unsplash.com/FTSNEKBZ-IA/1600x1600)`
           }}
         >
-          <span style={{ color: "white" }}>Page 2</span>
+          <span style={{ color: "white" }}>Passive Pull Requests</span>
         </section>
         <section
           style={{
@@ -75,6 +80,7 @@ export const pageQuery = graphql`
               ...GatsbyContentfulSizes_withWebp
             }
           }
+          backgroundUrl
           description {
             childMarkdownRemark {
               html
