@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Playfair+Display");
 
-@font-face {
-  font-family: "julietta-messie-ooer";
-  src: url("../../static/julietta-messie-ooer.woff2") format("woff2"),
-    url("../../static/julietta-messie-ooer.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
@@ -72,13 +64,6 @@ section h3 {
   min-height: 30vh;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-size: 8rem;
-}
-
-section:first-of-type h3 {
-  font-family: "julietta-messie-ooer";
-  font-size: 8rem;
-  color: #cd0000;
-  transform: rotate(-10deg);
 }
 
 /**

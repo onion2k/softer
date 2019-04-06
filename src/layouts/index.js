@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import base from "./base.css";
+import contentfulTitleStyles from "./contentful.css";
 import Container from "../components/container";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";

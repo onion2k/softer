@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family: "julietta-messie-ooer";
+  src: url("../../static/julietta-messie-ooer.woff2") format("woff2"),
+    url("../../static/julietta-messie-ooer.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ooer-home h3 {
+  min-height: 50vh;
+  font-family: "julietta-messie-ooer";
+  font-size: 40vh;
+  color: #cd0000;
+  transform: rotate(-10deg);
+}
+
+.ooer-home h3 a {
+  text-decoration: none;
+}

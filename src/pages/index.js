@@ -18,47 +18,6 @@ class RootIndex extends React.Component {
             <ArticlePreview key={node.slug} article={node} />
           )
         })}
-        <section
-          style={{
-            backgroundImage: `url(https://source.unsplash.com/62vi3TG5EDg/1600x1600)`
-          }}
-        >
-          <span>Ooer</span>
-        </section>
-        <section
-          style={{
-            backgroundImage: `url(https://source.unsplash.com/FTSNEKBZ-IA/1600x1600)`
-          }}
-        >
-          <span style={{ color: "white" }}>Passive Pull Requests</span>
-        </section>
-        <section
-          style={{
-            backgroundImage: `url(https://source.unsplash.com/yXZ8PKZFrIE/1600x1600)`
-          }}
-        >
-          <span style={{ color: "white" }}>Page 3</span>
-        </section>
-        <section
-          style={{
-            backgroundImage: `url(https://source.unsplash.com/nI0gM8_crrQ/1600x1600)`
-          }}
-        >
-          <span style={{ color: "white" }}>Page 4</span>
-        </section>
-        {/* <Hero data={author.node} /> */}
-        {/* <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
-              )
-            })}
-          </ul>
-        </div> */}
       </div>
     );
   }
@@ -81,6 +40,7 @@ export const pageQuery = graphql`
             }
           }
           backgroundUrl
+          titleClass
           description {
             childMarkdownRemark {
               html
