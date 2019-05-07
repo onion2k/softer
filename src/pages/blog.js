@@ -49,6 +49,7 @@ export const pageQuery = graphql`
               ...GatsbyContentfulSizes_withWebp
             }
           }
+          backgroundUrl
           description {
             childMarkdownRemark {
               html

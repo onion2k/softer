@@ -8,16 +8,13 @@ export default () => (
       <Link to="/">Home</Link>
     </li>
     <li className={styles.navigationItem}>
-      <Link to="/">Blog</Link>
-    </li>
-    <li className={styles.navigationItem}>
       <Link to="/">Experiments</Link>
     </li>
     <li className={styles.navigationItem}>
-      <Link to="/">Github</Link>
+      <a href="https://github.com/onion2k/">Github</a>
     </li>
     <li className={styles.navigationItem}>
-      <Link to="/">LinkedIn</Link>
+      <a href="https://linkedin.com/cdneale/">LinkedIn</a>
     </li>
   </ul>
 );

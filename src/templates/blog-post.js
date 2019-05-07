@@ -13,8 +13,12 @@ class BlogPostTemplate extends React.Component {
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className={heroStyles.hero}>
-          <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
+        <div className={heroStyles.hero} style={{
+          height: '100vh',
+      backgroundImage: `url(${post.backgroundUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center'
+    }}>
         </div>
         <div className="wrapper">
           <h1 className="section-headline">{post.title}</h1>
@@ -48,6 +52,7 @@ export const pageQuery = graphql`
           ...GatsbyContentfulSizes_withWebp
         }
       }
+      backgroundUrl
       body {
         childMarkdownRemark {
           html
