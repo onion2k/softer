@@ -13,27 +13,29 @@ class BlogPostTemplate extends React.Component {
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className={heroStyles.hero} style={{
-          height: '100vh',
-      backgroundImage: `url(${post.backgroundUrl})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center'
-    }}>
-        </div>
-        <div className="wrapper">
-          <h1 className="section-headline">{post.title}</h1>
-          <p
-            style={{
-              display: 'block',
-            }}
-          >
-            {post.publishDate}
-          </p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.body.childMarkdownRemark.html,
-            }}
-          />
+        <div className="wrapper" style={{
+          minHeight: '100vh',
+          backgroundImage: `url(${post.backgroundUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}>
+          <div className="blog-post">
+            <h1 className="section-headline">{post.title}</h1>
+            <p
+              style={{
+                display: 'block',
+              }}
+            >
+              {post.publishDate}
+            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: post.body.childMarkdownRemark.html,
+              }}
+            />
+          </div>
         </div>
       </div>
     )
