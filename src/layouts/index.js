@@ -18,12 +18,9 @@ class Template extends React.Component {
 
     return (
       <Container>
+        <Navigation />
         {children()}
-        <div className="fixed">
-          <Navigation />
-          <div className="empty"></div>
-          <Footer />
-        </div>
+        <Footer />
       </Container>
     );
   }
