@@ -8,11 +8,18 @@
 }
 
 .ooer-home h3 {
-  min-height: 50vh;
+  min-height: 30vh;
   font-family: "julietta-messie-ooer";
-  font-size: 40vh;
+  font-size: 40vmin;
   color: #cd0000;
   transform: rotate(-10deg);
+}
+
+@media (min-width: 800px) {
+  .ooer-home h3 {
+    min-height: 50vh;
+    font-size: 50vmin;
+  }
 }
 
 .ooer-home h3 a {
