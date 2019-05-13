@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Lato:200");
 
 body {
   scroll-snap-type: mandatory;
@@ -41,7 +41,6 @@ a {
   grid-template-areas: "side menu";
   align-items: center;
 }
-
 
 @media (min-width: 600px) {
   .fixed {
@@ -116,20 +115,24 @@ section h3 {
 }
 
 .blog-post {
-  background-color: rgba(255,255,255,0.8);
+  min-height: 96vh;
+  background-color: rgba(255, 255, 255, 0.95);
   border-left: 1px solid white;
   border-right: 1px solid white;
   padding: 5vmin 2.5vw 5vmin;
   margin: 0 7vw;
+
+  font-family: Lato, sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 600px) {
   .blog-post {
-    background-color: rgba(255,255,255,0.75);
     border-left: 1px solid white;
     border-right: 1px solid white;
     padding: 5vmin 5vw 5vmin 5vw;
     margin: 0 23vw 0 7vw;
   }
 }
-

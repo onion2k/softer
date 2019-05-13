@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "julietta-messie-ooer";
   src: url("../../static/julietta-messie-ooer.woff2") format("woff2"),
@@ -17,8 +16,8 @@
 
 @media (min-width: 800px) {
   .ooer-home h3 {
-    min-height: 50vh;
-    font-size: 50vmin;
+    min-height: 40vh;
+    font-size: 40vmin;
   }
 }
 
