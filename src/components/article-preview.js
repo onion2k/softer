@@ -6,7 +6,7 @@ import styles from "./article-preview.module.css";
 
 export default ({ article }) => (
   <section
-    className={article.titleClass || ""}
+    className={article.titleClass || "section"}
     style={{
       backgroundImage: `url(${article.backgroundUrl})`
     }}
